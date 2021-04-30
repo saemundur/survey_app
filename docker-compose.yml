@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: ./Django_Server/django_survey
+    ports:
+      - 8000:8000
+  client:
+    build: ./Nuxt_Client/client
+    ports:
+      - 3000:3000
